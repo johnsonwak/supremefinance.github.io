@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPREME FINANCE - OFFICIAL PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ===== MAIN STYLES ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ===== BLUE BACKGROUND SECTIONS ===== */
+        .blue-bg {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* ===== GREEN BACKGROUND SECTIONS ===== */
+        .green-bg {
+            background-color: #006633;
+            color: white;
+            padding: 15px 0;
+        }
+
+        /* ===== COMPANY HEADER ===== */
+        .company-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo {
+            height: 80px;
+            border: 3px solid #00cc66;
+            border-radius: 5px;
+        }
+
+        .company-title {
+            font-style: italic;
+            font-size: 28px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #004d99;
+        }
+
+        /* ===== MAIN CONTENT LAYOUT ===== */
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .content-area {
+            flex-grow: 1;
+        }
+
+        /* ===== FORM DOWNLOAD SECTION ===== */
+        .form-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #003366;
+            border-bottom: 2px solid #00cc66;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .form-item {
+            margin-bottom: 15px;
+        }
+
+        .form-link {
+            display: block;
+            background: #f0f8ff;
+            color: #003366;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border-left: 4px solid #00cc66;
+        }
+
+        .form-link:hover {
+            background: #d9ecff;
+            transform: translateX(5px);
+        }
+
+        .form-link i {
+            color: #d33;
+            margin-right: 10px;
+        }
+
+        /* ===== CALCULATOR SECTION ===== */
+        .calculator {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .footer-logo {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact i {
+            margin-right: 10px;
+            color: #00cc66;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 992px) {
+            .company-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== BLUE HEADER SECTION ===== -->
+    <header class="blue-bg">
+        <div class="company-header">
+            <div class="logo-container">
+                <!-- ==== REPLACE LOGO ==== -->
+                <img src="SUPREME-FINANCE-LOGO.PNG" alt="SUPREME FINANCE LOGO" class="logo">
+            </div>
+            <div>
+                <h1 class="company-title">SUPREME FINANCE</h1>
+                <p class="tagline">Unleashing Financial Freedom Through Tailored Solutions</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== GREEN NAVIGATION BAR ===== -->
+    <nav class="green-bg">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="#"><i class="fas fa-hand-holding-usd"></i> LOANS</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> FORMS</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-container">
+        <!-- ===== SIDEBAR WITH FORMS ===== -->
+        <aside class="sidebar">
+            <section class="form-section">
+                <h2 class="section-title"><i class="fas fa-download"></i> OFFICIAL FORMS</h2>
+                <ul class="form-list">
+                    <!-- ==== REPLACE PDF FILES ==== -->
+                    <li class="form-item">
+                        <a href="SUPREME-LOAN-APPLICATION-FORM.PDF" download class="form-link">
+                            <i class="fas fa-file-pdf"></i> LOAN APPLICATION FORM
+                        </a>
+                    </li>
+                    <li class="form-item">
+                        <a href="SUPREME-REPAYMENT-SCHEDULE.PDF" download class="form-link">
+                            <i class="fas fa-file-pdf"></i> REPAYMENT SCHEDULE
+                        </a>
+                    </li>
+                    <li class="form-item">
+                        <a href="SUPREME-EMPLOYEE-ADVICE-FORM.PDF" download class="form-link">
+                            <i class="fas fa-file-pdf"></i> EMPLOYEE ADVICE FORM
+                        </a>
+                    </li>
+                    <li class="form-item">
+                        <a href="SUPREME-LOAN-STATEC-FORM.PDF" download class="form-link">
+                            <i class="fas fa-file-pdf"></i> LOAN STATEC FORM
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- ===== MAIN CONTENT AREA ===== -->
+        <main class="content-area">
+            <section class="calculator">
+                <h2 class="section-title"><i class="fas fa-calculator"></i> LOAN CALCULATOR</h2>
+                <!-- Calculator content here -->
+            </section>
+        </main>
+    </div>
+
+    <!-- ===== BLUE FOOTER ===== -->
+    <footer class="blue-bg">
+        <div class="footer-container">
+            <div>
+                <!-- ==== REPLACE FOOTER LOGO ==== -->
+                <img src="SUPREME-FINANCE-LOGO.PNG" alt="SUPREME FINANCE LOGO" class="footer-logo">
+                <p>Unleashing Financial Freedom Through Tailored Solutions</p>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <p><i class="fas fa-map-marker-alt"></i> PO BOX 1966, BOROKO, PORT MORESBY</p>
+                <p><i class="fas fa-phone"></i> 77492090 / 71547974</p>
+                <p><i class="fas fa-envelope"></i> SUPREMEfinance24@gmail.com</p>
+            </div>
+            <div>
+                <h3>QUICK LINKS</h3>
+                <ul class="form-list">
+                    <li class="form-item"><a href="#" class="form-link">Home</a></li>
+                    <li class="form-item"><a href="#" class="form-link">Loan Products</a></li>
+                    <li class="form-item"><a href="#" class="form-link">Application Process</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2);">
+            <p>&copy; 2025 SUPREME FINANCE. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>
